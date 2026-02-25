@@ -19,6 +19,8 @@ class Graph:
         self._root = root
 
     def dfs(self):
+        if self.root is None:
+            return []
         visited = []   # список пройденных вершин в порядке обхода
         stack = [self._root]     # стек вершин
 
